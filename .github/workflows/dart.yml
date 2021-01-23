@@ -31,17 +31,6 @@ jobs:
   # uses: andreujuanc/flutter-android-sdk@e347c4122d3ccf725c153b5e2d6d3b88ec2c3557
         uses: andreujuanc/flutter-android-sdk@v1.0.6
       
-      - name: Install dependencies
-  # You may pin to the exact commit or the version.
-  # uses: britannio/action-install-flutter@95489232052b8469c95b326da7f120bf8ae70995
-        uses: britannio/action-install-flutter@v0.4
-        #with:
-    # The branch/version of Flutter to be used. E.g. beta or 1.22.0
-          #version:  optional, default is stable
-      # Uncomment this step to verify the use of 'dart format' on each commit.
-      - name: Verify formatting
-        run: dart format --output=none --set-exit-if-changed .
-
       # Consider passing '--fatal-infos' for slightly stricter analysis.
       #- name: Analyze project source
        # run: dart analyze
