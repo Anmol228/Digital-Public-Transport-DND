@@ -23,8 +23,8 @@ jobs:
       - name: Print Dart SDK version
         run: dart --version
 
-      - name: Install dependencies
-        run: dart flutter pub get 
+      #- name: Install dependencies
+       # run: dart flutter pub get 
       
       - name: flutter-android-sdk
   # You may pin to the exact commit or the version.
