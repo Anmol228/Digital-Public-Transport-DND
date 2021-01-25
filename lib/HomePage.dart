@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
 
   checkAuthentification() async{
 
-    _auth.onAuthStateChanged.listen((user) { 
+    _auth.onAuthStateChanged.listen((user) {
 
       if(user ==null)
       {
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState(){
-  super.initState();
+    super.initState();
     this.checkAuthentification();
     this.getUser();
   }
@@ -56,50 +56,50 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
 
 
-     body: Container(
-       child: !isloggedin? CircularProgressIndicator(): 
-       
-       Column(
-         children: <Widget>[
+        body: Container(
+          child: !isloggedin? CircularProgressIndicator():
 
-           SizedBox(height: 40.0),
+          Column(
+            children: <Widget>[
 
-           Container(
+              SizedBox(height: 40.0),
 
-            height: 300,
-            child: Image(image: AssetImage("images/welcome.jpg"),
-            fit: BoxFit.contain,
-          ),
-        ),     
-            Container(
-              child: Text("Hello ${user.displayName} you are Logged in as ${user.displayName}",
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold
-              ),),
-            ),
+              Container(
 
-            RaisedButton(
-
-               padding: EdgeInsets.fromLTRB(70,10,70,10),
-                      onPressed: signOut,
-                      child: Text('Signout',style: TextStyle(
-
-                      color: Colors.white,
+                height: 300,
+                child: Image(image: AssetImage("images/welcome.jpg"),
+                  fit: BoxFit.contain,
+                ),
+              ),
+              Container(
+                child: Text("Hello you are Logged in as ${user.email}",
+                  style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold
-                      
-                      )),
+                  ),),
+              ),
 
-                      color: Colors.orange,
-                      shape: RoundedRectangleBorder(
+              RaisedButton(
 
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-            )
-        ],
-       ),
-     )
+                padding: EdgeInsets.fromLTRB(70,10,70,10),
+                onPressed: signOut,
+                child: Text('Signout',style: TextStyle(
+
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold
+
+                )),
+
+                color: Colors.orange,
+                shape: RoundedRectangleBorder(
+
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+              )
+            ],
+          ),
+        )
 
     );
   }
