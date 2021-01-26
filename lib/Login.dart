@@ -225,7 +225,7 @@ class _LoginState extends State<Login> {
 // //     Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUp()));
 
 // //   }
-
+// //
 // //   @override
 // //   Widget build(BuildContext context) {
 // //     return Scaffold(
