@@ -1,9 +1,9 @@
-import 'package:authentification/Side%20Drawer.dart';
+import 'package:authentification/SideDrawer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
+
 import 'package:authentification/Login.dart';
 import 'SignUp.dart';
-import 'package:authentification/Side Drawer.dart';
+
 class Start extends StatefulWidget {
   @override
 
