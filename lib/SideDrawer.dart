@@ -1,6 +1,7 @@
+import 'package:authentification/main.dart';
 import 'package:flutter/material.dart ';
 import 'package:authentification/HomePage.dart';
-class SideDrawer extends StatelessWidget {
+class SideDrawer extends MyApp {
   @override
   Widget build(BuildContext context) {
     return Drawer(
