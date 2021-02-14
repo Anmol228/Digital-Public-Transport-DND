@@ -7,6 +7,6 @@
      <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/source" />
+            android:src="C:\Users\Rutvij\Documents\Digital Public Transport\Digital-Public-Transport\android\app\src\main\res\drawable\source.jpg" />
     </item> 
 </layer-list>
