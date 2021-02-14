@@ -1,10 +1,10 @@
 import 'package:authentification/main.dart';
-import 'package:flutter/material.dart ';
+import 'package:flutter/material.dart';
 import 'package:authentification/HomePage.dart';
 class SideDrawer extends MyApp {
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return new Drawer(
       child: Column(
         children: <Widget>[
           DrawerHeader(
@@ -38,7 +38,7 @@ class SideDrawer extends MyApp {
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
-            leading: Icon(Icons.qr_code_scanner_sharp),
+            leading: Icon(Icons.qr_code_sharp),
             title: Text('QR_Code'),
             onTap: () => {Navigator.of(context).pop()},
           ),
