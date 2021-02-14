@@ -20,7 +20,6 @@ jobs:
         flutter-version: '1.7.8+hotfix.4'
     - run: flutter upgrade --force
     - run: flutter doctor -v
-    - run: flutter doctor --android-licenses
     - run: flutter packages get
     - run: flutter pub get
     - run: flutter build apk --debug --split-per-abi
