@@ -18,9 +18,12 @@ jobs:
     - uses: subosito/flutter-action@v1.4.0
       with:
         flutter-version: '1.7.8+hotfix.4'
+    - run: flutter upgrade --force
+    - run: flutter doctor -v
+    - run: flutter doctor --android-licenses
     - run: flutter packages get
     - run: flutter pub get
-    - run: flutter build apk --target-platform android-arm,android-arm64,android-x64
+    - run: flutter build apk --debug --split-per-abi
     - name: Create a Release APK
       uses: ncipollo/release-action@v1.7.3
       with:
