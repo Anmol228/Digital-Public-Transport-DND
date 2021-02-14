@@ -18,7 +18,6 @@ jobs:
     - uses: subosito/flutter-action@v1.4.0
       with:
         flutter-version: '1.7.8+hotfix.4'
-    - run: flutter clean
     - run: flutter packages get
     - run: flutter pub get
     - run: flutter build apk --debug --split-per-abi
