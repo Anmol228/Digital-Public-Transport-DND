@@ -1,3 +1,4 @@
+import 'package:authentification/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
 
@@ -10,6 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primaryColor: Colors.orange),
       debugShowCheckedModeBanner: false,
       home: HomePage(),
+
     );///main app
   }
 }
