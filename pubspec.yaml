@@ -18,8 +18,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.8.0 <3.0.0"
-  shared_preferences: ^0.5.6+2
+  sdk: ">=2.7.0 <3.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
@@ -50,8 +50,9 @@ flutter:
     - images/start.jpg
     - images/login.jpg
     - images/welcome.jpg
-    - images/made.jpg
     - images/giphy.jpg
+    - images/made.jpg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
